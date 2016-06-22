@@ -16,7 +16,6 @@ F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Cur
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.pdb
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
-F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
