@@ -1,0 +1,2 @@
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Currency Converter.exe.config

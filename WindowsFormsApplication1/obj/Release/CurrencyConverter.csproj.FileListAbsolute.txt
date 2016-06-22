@@ -1,0 +1,10 @@
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Currency Converter.exe.config
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Currency Converter.exe
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Currency Converter.pdb
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Newtonsoft.Json.dll
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\bin\Release\Newtonsoft.Json.xml
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\CurrencyConverter.Form1.resources
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\CurrencyConverter.Properties.Resources.resources
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\CurrencyConverter.csproj.GenerateResource.Cache
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\Currency Converter.exe
+F:\~Programiranje\2k16\proj3\WindowsFormsApplication1\WindowsFormsApplication1\obj\Release\Currency Converter.pdb
