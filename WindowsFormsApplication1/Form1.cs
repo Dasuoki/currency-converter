@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using Newtonsoft.Json;
@@ -16,27 +11,27 @@ namespace CurrencyConverter
 {
     public partial class Form1 : Form
     {
-        public Dictionary<string, float> values = new Dictionary<string, float>();
-        public float multi = 1;
-        public string unit1;
-        public string unit2;
+        public Dictionary<string, float> Values = new Dictionary<string, float>();
+        public float Multi = 1;
+        public string Unit1;
+        public string Unit2;
         
-        public void baza()
+        public void Baza()
         {
             string json = new WebClient().DownloadString("https://openexchangerates.org/api/latest.json?app_id=ab92a57b10b54a399946c3d1cf2f2fa1");
             json = json.Remove(0, 585);
             json = json.Remove(json.Length - 1, 1);
-            values = JsonConvert.DeserializeObject<Dictionary<string, float>>(json);
+            Values = JsonConvert.DeserializeObject<Dictionary<string, float>>(json);
 
             using (var writer = new StreamWriter(@"values.csv"))
             {
-                foreach (var pair in values)
+                foreach (var pair in Values)
                 {
                     writer.WriteLine("{0};{1};", pair.Key, pair.Value);
                 }
             }
             var t = File.GetLastWriteTime(@"values.csv");
-            label3.Text = "Baza osvježena: " + t.ToString();
+            label3.Text = "Baza osvježena: " + t;
             label3.Visible = true;
         }
 
@@ -48,14 +43,14 @@ namespace CurrencyConverter
             {
                 var writer = new StreamWriter(File.Create(@"values.csv"));
                 writer.Close();
-                baza();
+                Baza();
             }
             else
             {
                 FileInfo fil = new FileInfo(@"values.csv");
                 if (fil.LastWriteTime < DateTime.Now.AddDays(-1))
                 {
-                    baza();
+                    Baza();
                 }
                 else
                 {
@@ -66,7 +61,7 @@ namespace CurrencyConverter
                         var val = line.Split(';');
                         var key = val[0];
                         var value = Convert.ToSingle(val[1]);
-                        values.Add(key, value);
+                        Values.Add(key, value);
                     }
                 }
             }
@@ -79,12 +74,12 @@ namespace CurrencyConverter
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            unit1 = comboBox1.Text;
+            Unit1 = comboBox1.Text;
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            unit2 = comboBox2.Text;
+            Unit2 = comboBox2.Text;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -99,14 +94,14 @@ namespace CurrencyConverter
                 textBox1.Text = null;
             else
             {
-                multi = (values["USD"] / values[unit1]) * float.Parse(textBox1.Text);
-                textBox2.Text = (values[unit2] * multi).ToString();
+                Multi = (Values["USD"] / Values[Unit1]) * float.Parse(textBox1.Text);
+                textBox2.Text = (Values[Unit2] * Multi).ToString(CultureInfo.CurrentCulture);
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            baza();
+            Baza();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -115,8 +110,8 @@ namespace CurrencyConverter
                 textBox1.Text = null;
             else
             {
-                multi = (values["USD"] / values[unit1]) * float.Parse(textBox1.Text);
-                textBox2.Text = (values[unit2] * multi).ToString();
+                Multi = (Values["USD"] / Values[Unit1]) * float.Parse(textBox1.Text);
+                textBox2.Text = (Values[Unit2] * Multi).ToString(CultureInfo.CurrentCulture);
             }
         }
     }
