@@ -11,6 +11,7 @@ namespace CurrencyConverter
 {
     public partial class Form1 : Form
     {
+        //definiranje globalnih
         public Dictionary<string, float> Values = new Dictionary<string, float>();
         public float Multi = 1;
         public string Unit1;
@@ -18,11 +19,13 @@ namespace CurrencyConverter
         
         public void Baza()
         {
+            //preuzimanje podataka sa openexchangerates api
             string json = new WebClient().DownloadString("https://openexchangerates.org/api/latest.json?app_id=ab92a57b10b54a399946c3d1cf2f2fa1");
             json = json.Remove(0, 585);
             json = json.Remove(json.Length - 1, 1);
             Values = JsonConvert.DeserializeObject<Dictionary<string, float>>(json);
 
+            //upis podataka u tablicu za kasnije koristenje
             using (var writer = new StreamWriter(@"values.csv"))
             {
                 foreach (var pair in Values)
@@ -39,6 +42,7 @@ namespace CurrencyConverter
         {
             InitializeComponent();
 
+            //provjera da li postoji stara tablica, ako ne postoji preuzmi novu
             if (!File.Exists(@"values.csv"))
             {
                 var writer = new StreamWriter(File.Create(@"values.csv"));
@@ -47,11 +51,13 @@ namespace CurrencyConverter
             }
             else
             {
+                //ako je starija od 24 sata preuzmi novu
                 FileInfo fil = new FileInfo(@"values.csv");
                 if (fil.LastWriteTime < DateTime.Now.AddDays(-1))
                 {
                     Baza();
                 }
+                //ako je friska prenesi ju u Dict
                 else
                 {
                     var reader = new StreamReader(File.OpenRead(@"values.csv"));
@@ -84,12 +90,14 @@ namespace CurrencyConverter
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //I am the one who nulls
             if (textBox1.Text == "")
                 textBox1.Text = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //I am the one who nulls
             if (textBox1.Text == "")
                 textBox1.Text = null;
             else
@@ -101,11 +109,13 @@ namespace CurrencyConverter
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //preuzmi svjeze podatke
             Baza();
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //I am the one who nulls
             if (textBox1.Text == "")
                 textBox1.Text = null;
             else
