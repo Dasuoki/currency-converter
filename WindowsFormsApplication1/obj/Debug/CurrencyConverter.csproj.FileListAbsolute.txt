@@ -19,3 +19,4 @@ F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\New
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
+F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
