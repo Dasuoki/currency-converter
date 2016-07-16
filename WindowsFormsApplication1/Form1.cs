@@ -16,11 +16,13 @@ namespace CurrencyConverter
         public float Multi = 1;
         public string Unit1;
         public string Unit2;
-        
+        public string ApiKey = "ab92a57b10b54a399946c3d1cf2f2fa1";
+
+
         public void Baza()
         {
             //preuzimanje podataka sa openexchangerates api
-            string json = new WebClient().DownloadString("https://openexchangerates.org/api/latest.json?app_id=ab92a57b10b54a399946c3d1cf2f2fa1");
+            string json = new WebClient().DownloadString("https://openexchangerates.org/api/latest.json?app_id="+ApiKey);
             json = json.Remove(0, 585);
             json = json.Remove(json.Length - 1, 1);
             Values = JsonConvert.DeserializeObject<Dictionary<string, float>>(json);
