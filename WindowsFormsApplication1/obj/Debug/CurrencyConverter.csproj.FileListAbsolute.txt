@@ -20,3 +20,14 @@ F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\Cur
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
 F:\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.exe.config
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\Currency Converter.exe
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\Currency Converter.pdb
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.exe
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.pdb
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
+D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache

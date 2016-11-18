@@ -92,21 +92,14 @@ namespace CurrencyConverter
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //I am the one who nulls
+            //treba bit null jer se kreša
             if (textBox1.Text == "")
                 textBox1.Text = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //I am the one who nulls
-            if (textBox1.Text == "")
-                textBox1.Text = null;
-            else
-            {
-                Multi = (Values["USD"] / Values[Unit1]) * float.Parse(textBox1.Text);
-                textBox2.Text = (Values[Unit2] * Multi).ToString(CultureInfo.CurrentCulture);
-            }
+            updateValues();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -115,9 +108,13 @@ namespace CurrencyConverter
             Baza();
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            //I am the one who nulls
+            updateValues();
+        }
+
+        private void updateValues()
+        {
             if (textBox1.Text == "")
                 textBox1.Text = null;
             else
