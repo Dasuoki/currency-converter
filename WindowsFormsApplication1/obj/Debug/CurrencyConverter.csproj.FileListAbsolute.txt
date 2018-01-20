@@ -31,3 +31,13 @@ D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\ob
 D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
 D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
 D:\~Transcend\~Programiranje\2k16\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.CoreCompileInputs.cache
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\Currency Converter.exe
+G:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\Currency Converter.pdb
+G:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.exe.config
+G:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.exe
+G:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.pdb

@@ -23,7 +23,7 @@ namespace CurrencyConverter
         {
             //preuzimanje podataka sa openexchangerates api
             string json = new WebClient().DownloadString("https://openexchangerates.org/api/latest.json?app_id="+ApiKey);
-            json = json.Remove(0, 585);
+            json = json.Remove(0, 189);
             json = json.Remove(json.Length - 1, 1);
             Values = JsonConvert.DeserializeObject<Dictionary<string, float>>(json);
 
@@ -123,6 +123,32 @@ namespace CurrencyConverter
                 textBox2.Text = (Values[Unit2] * Multi).ToString(CultureInfo.CurrentCulture);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+
+        //pomicanje prozora sa misom
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
     }
 }
 //(float)Convert.ToDouble
