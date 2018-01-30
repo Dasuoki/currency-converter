@@ -82,12 +82,12 @@ namespace CurrencyConverter
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Unit1 = comboBox1.Text;
+            Unit1 = comboBox1.Text.ToUpper();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Unit2 = comboBox2.Text;
+            Unit2 = comboBox2.Text.ToUpper();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

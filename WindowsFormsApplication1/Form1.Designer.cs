@@ -214,6 +214,7 @@
             "ZMK",
             "ZMW",
             "ZWL"});
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
