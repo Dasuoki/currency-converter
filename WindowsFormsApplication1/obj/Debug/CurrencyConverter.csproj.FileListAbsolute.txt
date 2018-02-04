@@ -44,10 +44,9 @@ G:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converte
 D:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.exe.config
 D:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.exe
 D:\Repos\currency-converter\WindowsFormsApplication1\bin\Debug\Currency Converter.pdb
-D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csprojResolveAssemblyReference.cache
-D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
 D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Properties.Resources.resources
 D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.GenerateResource.Cache
 D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.csproj.CoreCompileInputs.cache
 D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\Currency Converter.exe
 D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\Currency Converter.pdb
+D:\Repos\currency-converter\WindowsFormsApplication1\obj\Debug\CurrencyConverter.Form1.resources
